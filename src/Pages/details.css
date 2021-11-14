@@ -1,0 +1,185 @@
+.rubik{
+    font-family: rubik;
+    background-color: #BCBABA;
+}
+.detailSide{
+    margin-bottom: 100px;
+}
+.detailImage{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border-radius: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    /* margin-left: 20px; */
+}
+.detailImage img{
+    min-width: auto;
+    min-height: 500px;
+    max-width: 500px;
+    max-height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.bg{
+    border: 1px solid green;
+}
+.detailTitle h1{
+    font-family: poppinsbold;
+    font-weight: normal;
+    margin: 0px;
+}
+.detailTitle p{
+    font-family: poppins;
+    font-size: 30px;
+    font-weight: bold;
+}
+.btnAction {
+    border-radius: 10px !important;
+    font-weight: bolder !important;
+    border: none !important;
+    padding: 12px !important;
+}
+.detailBody{
+    border-radius: 20px;
+    padding: 50px;
+}
+.detailInfo{
+    font-family: poppins;
+    font-size: 15px
+}
+.detailDescription{
+    font-size: 18px;
+    min-height: 260px;
+    max-height: 380px;
+    overflow-y: scroll;
+}
+.detailDelivery{
+    font-family: poppinsbold;
+}
+.detailDelivery .detailDeliveryTitle{
+    font-size: 18px;
+}
+.btnActionDelivery {
+    border-radius: 10px !important;
+    font-weight: bolder !important;
+    border: none !important;
+    padding-left: 40px  !important;
+    padding-right: 40px  !important;
+    /* padding: 12px !important; */
+}
+.checkOut{
+    position: absolute;
+    bottom: -180px;
+    width: 80%;
+}
+.checkOutProduct{
+    width: 80%;
+    padding: 20px;
+    /* margin-right: 20px; */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 10px 20px #888888;
+}
+.checkOutPicture{
+    width: 12%;
+}
+.checkOutProductImage{
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 100%;
+    object-fit: cover;
+    position: relative;
+}
+.checkOutProductImage img{
+    max-width: 120px;
+    max-height: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.checkOutButton{
+    margin-left: 2%;
+    width: 15%;
+    font-size: 20px !important;
+    font-family: poppinsbold !important;
+    color: #000 !important;
+    background-color:#FFBA33 !important;
+    border-radius: 10px !important;
+    border: none !important;
+}
+.checkOutTitle{
+    font-family: poppinsbold;
+    width: 70%;
+    
+}
+.checkOutTitle h1{
+    font-size: 30px;
+}
+.checkOutQty{
+    width: 18%;
+}
+.checkOutQtyButton{
+    width: 35px;
+    height: 35px;
+    background-color: pink;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.checkOutQtyNumber{
+    width: 50px;
+    height: 35px;
+    display: flex;
+    font-size: 18px;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid green; */
+}
+
+.brown{
+    background-color: #6A4029 !important;
+}
+.yellow{
+    background-color:#FFBA33 !important;
+}
+.black{
+    background-color:  #000 !important;
+}
+.fontWhite{
+    color: white !important;
+}
+.fontBrown{
+    color:#6A4029 !important;
+}
+
+@media screen and (max-width:576px){
+    .detailImage{
+        /* margin-top: 0px; */
+        width: 250px;
+        height: 350px;
+        margin-left: 50px;
+    }
+    .detailImage img{
+        object-position: center;
+        object-fit: cover;
+    }
+
+    .detailBody h1{
+        margin-top: 20px;
+        font-size: 40px;
+        font-weight: 900;
+    }
+}

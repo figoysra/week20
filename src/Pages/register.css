@@ -1,0 +1,53 @@
+.textBrown {
+    color: #6A4029;
+}
+
+.bgbrown {
+    background-color: #6A4029;
+}
+
+.bgyellow {
+    background-color: #ffba33;
+}
+
+.silver {
+    color: #4F5665;
+}
+.aside{
+        height: 750px;
+}
+.navbar-brand{
+    cursor: pointer;
+}
+.form {
+    /* background-color: green; */
+    padding-top: 20px;
+}
+
+.input {
+    border-radius: 8px;
+    padding: 12px;
+    /* background-color: aqua; */
+}
+
+.btn-css {
+    border: none;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.btnSubmit{
+    border: none;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@media screen and (max-width:576px){
+    .aside{
+        display: none;
+    }
+    .section{
+        width: 100%;
+        /* background-color: greenyellow; */
+    }
+}

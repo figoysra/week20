@@ -1,0 +1,152 @@
+.background{
+    background-image: url("https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=878&q=80");
+    background-position: center;
+    background-size: cover;
+}
+.noCart{
+    height: 100vh;
+    font-family: rubik;
+}
+.noCart img{
+    width: auto;
+    height: 300px;
+    /* filter: grayscale(100%); */
+}
+.noCart h1{
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.24);
+}
+.noCart Button{
+    font-family: poppinsbold;
+    border-radius: 200px;
+    width: 500px;
+    background-color: #52B1B1;
+}
+.noCart Button:hover{
+    background-color: #52B1B1;
+}
+.border{
+    border: 1px solid green;
+}
+.productTitle{
+    color: white;
+    font-family: poppinsbold;
+    width: 300px;
+}
+.productTitle h1{
+    font-size: 30px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.24);
+}
+.productBorder{
+    background-color: white;
+    border-radius: 10px;
+}
+.productBorderTitle{
+    color:#6A4029 !important;
+    font-family: poppinsbold;
+    font-size: 25px;
+}
+.productImage{
+    width: 20%;
+}
+.productImg{
+    width: 65px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    object-fit: cover;
+}
+.productImg img{
+    max-width: 100px;
+    max-height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+.productBody{
+    width: 45%;
+    margin: none;
+}
+.productPrice{
+    width: 35%;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.payment{
+    padding-top: 100px;
+    font-family: poppins;
+}
+
+.addressDetailTitle{
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.24);
+    font-size: 18px;
+}
+.addressDetailBody{
+    border-radius: 10px;
+}
+.addressDetailDesc{
+    /* min-height: 50px;
+    max-height: 120px;
+    overflow-y: scroll; */
+    resize: none;
+}
+.paymentMethodTitle{
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.24);
+    font-size: 18px;
+}
+.paymentMethodBody{
+    border-radius: 10px;
+}
+.iconBorder{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+.deliveryMethodTitle{
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.24);
+    font-size: 18px;
+}
+.paymentMethodBody{
+    border-radius: 10px;
+}
+.applyButton{
+    font-family: poppins !important;
+    border: none !important;
+    border-radius: 10px !important;
+}
+
+
+.brown{
+    background-color: #6A4029 !important;
+}
+.orange{
+    background-color: orangered;
+}
+.yellow{
+    background-color: yellow;
+}
+.textBrown{
+    color: #6A4029;
+}
+.fs15{
+    font-size: 15px;
+}
+.fs20{
+    font-size: 30px;
+}
+.fs18{
+    font-size: 18px;
+    cursor: pointer;
+}
+.poppinsbold{
+    font-family: poppinsbold;
+}
+@media screen and (max-width:576px){
+    .noCart Button{
+        width: 150px;
+    }
+}
+

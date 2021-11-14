@@ -1,0 +1,60 @@
+
+.aside{
+    min-width: 45%;
+    height: 100vh;
+    /* background-color: green; */
+    /* border: 1px solid rgb(195, 196, 195); */
+    /* background-image: url('https://s3-alpha-sig.figma.com/img/94cf/d4df/dd22d129a5bbab44da4da62471dafa2a?Expires=1629676800&Signature=LTTIxHdOZ72W63uxwOwryiB7pxCsK0viboKV9C96mof0bsm6kju-aRAVHcO3YHw00JmxR~sFWfHVjzbyxUWUCxUfaiabEC1KD36tfm9CgBrit3ah-29ghZzJWI2HnWzTRUJXAn-Sylxk2wnj4NmvVSZ7HiPBPDup3TIzexx~8f3EOfaqyyss4-UqGcls4PNx-8fsrr2Ky8oZMg6ZgC6W99O5rdbpwXsPLMdeSGWIdhMuDr8zu9tDW~DZfFkwjBlx6YMJCegSMA2HCRWIEjg~wFOBvylP~vYNtw8UETpVvp~OE9AhmoYLIm9J~D9UfRKA4q-IalcT4bq0NV837lqyTA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA'); */
+}
+.img{
+    object-position: center;
+    object-fit: cover;
+}
+
+.section{
+    font-family: rubik;
+    min-width: 55%;
+    /* background   -color: greenyellow; */
+}
+.form{
+    font-family: rubik;
+    margin-top: 50px;
+}
+.btn-css {
+    border: none;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.btnSubmit{
+    background-color: #ffba33;
+    border: none;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.btnSubmit:hover{
+    border: 2px solid #6A4029;
+    background-color: #ffba33 ;
+    color: #6A4029 ;
+}
+
+.bgyellow{
+    background-color: #ffba33 !important;
+}
+.bgbrown{
+    background-color: #6A4029 !important;
+}
+
+
+
+@media screen and (max-width:576px){
+    .aside{
+        display: none;
+    }
+    .section{
+        width: 100%;
+    }
+}

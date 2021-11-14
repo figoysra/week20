@@ -1,0 +1,353 @@
+
+.bg-image{
+    background-image: url("https://images.wallpaperscraft.com/image/single/coffee_cup_wooden_surface_106291_1920x1080.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 430px;
+    /* background-color: #6A4029; */
+}
+.title-text{
+    width: 550px;
+}
+.tag-text{
+    width: 565px;
+}
+.btn-get{
+    border-radius: 5px;
+    padding: 10px 50px;
+}
+
+.fsh1{
+    font-size: 35px;
+}
+.fsp{
+    font-size: 15px;
+}
+
+
+
+.infoMenu{
+    /* background-color: green; */
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 1px 10px 10px #c5c3c3;
+    position: relative;
+    bottom: 40px;
+}
+.infoMenuDetails {
+    border-right: 1px solid #c5c3c3;
+}
+.infoMenuDetails .icon{
+    margin-top: 10px;
+    height: 30px;
+    width: 30px;
+    background-color: #ffba33;
+    margin-right: 14px;
+}
+.infoMenuDetails .icon svg{
+    width: 12px;
+    height: auto;
+}
+
+ .favorite{
+    background-color: #FCFCFC;
+}
+ .favorite .favoriteproduct {
+    display: flex;
+    justify-content: center;
+}
+
+ .favorite .favoriteproduct .productfavorite {
+    border: 2px solid #dddddd;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+ .favorite .favoriteproduct .productfavorite:hover {
+    border: 2px solid #6A4029;
+    transform: scale(1.1);
+}
+
+ .favorite .favoriteproduct .productfavorite .roundborderfavorite {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    overflow: hidden;
+    top: -50px;
+    left: 60px;
+    right: 60px;
+    border-radius: 100px;
+    border: 1px solid #CCCCCC;
+}
+
+ .favorite .favoriteproduct .productfavorite h1 {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    /* height: 20px; */
+}
+
+ .favorite .favoriteproduct .productfavorite .listmenu {
+    margin-top: 10px;
+    font-size: 12px;
+    /* border: 1px solid green; */
+    height: 250px;
+}
+
+ .favorite .favoriteproduct .productfavorite .listmenu svg {
+    margin-right: 5px;
+}
+
+ .favorite .favoriteproduct .productfavorite .listmenu p {
+    margin-top: 20px;
+}
+
+ .favorite .favoriteproduct .productfavorite h2 {
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+ .favorite .favoriteproduct .productfavorite button {
+    margin-top: 10px;
+    padding: 10px 50px;
+    font-family: rubik;
+    font-size: 12px;
+    border-radius: 30px;
+    background-color: white;
+    border: 2px solid #ffba33;
+    cursor: pointer;
+    color: #6A4029;
+    font-weight: 700;
+}
+
+ .favorite .favoriteproduct .productfavorite button:hover {
+    background-color: #ffba33;
+    border: 2px solid transparent;
+}
+
+.ourPartner{
+    margin-top: 30px;
+}
+.partnerLogo{
+    display: flex;
+    justify-content: center;
+}
+.partnerLogo img{
+    filter: grayscale(10);
+    /* filter: brightness(-90); */
+    /* background-color: #c5c3c3; */
+    margin-top: 30px;
+    margin-right: 30px;
+    width: 150px;
+    height: auto;
+}
+
+.cardComment{
+    display: flex;
+    justify-content: center;
+}
+.comment {
+    margin-top: 50px;
+    width: 300px;
+    border: 1px solid #c5c3c3;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 20px;
+}
+.commentTitle{
+    display: flex;
+}
+.commentTitle .photoProfile{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+.commentTitle .nameLocation h1{
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0px;
+}
+.commentTitle .nameLocation p{
+    font-size: 12px;
+}
+.commentTitle .rating{
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    font-size: 12px;
+}
+.commentTitle .rating svg{
+    margin-bottom: 17px;
+    margin-left: 5px;
+}
+
+.text{
+    font-size: 12px;
+}
+.promoCard{
+    width: 100%;
+    /* background-color: #ffba33; */
+    border: 1px solid #c5c3c3;
+    border-radius: 10px;
+    border: none;   
+    padding: 30px;
+    box-shadow: 1px 10px 10px #dddddd;
+}
+.promoTitle{
+    width: 40%;
+}
+.promoTitle h1{
+    font-size: 30px;
+    width: 300px;
+    font-weight: 700;
+}
+.promoTitle p{
+    font-size: 12px;
+}
+
+.buttonPromo{
+    width: 60%;
+    padding: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.buttonPromo Button{
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    color: #FCFCFC;
+}
+.bgyellow{
+    background-color: #ffba33;
+}
+.brown{
+    color : #6A4029
+}
+
+
+
+@media screen and (max-width:576px){
+    .bg-image{
+        min-height: 20px;
+    }
+    .title-text{
+        width: 100%;
+    }
+    .tag-text {
+        width: auto;
+        font-size: 15px;
+    }
+    .imageteamwork{
+        display: none;
+    }
+    .infoMenu{
+        position: static;
+        bottom: 0px;
+        border-radius: 0px;
+        box-shadow: none;
+        width: 100%;
+    }
+    .infoMenuDetails{
+        width: 29%;    
+        /* border: 1px solid red; */
+        margin-right: 15px;
+        border-right: none;
+        padding: 0px;
+        font-size: 12px
+        
+    }
+    .infoMenuDetails .icon {
+        width: 20px;
+        height: 20px;
+        background-color: #ffba33;
+        margin-right: 15px;
+    }
+
+
+     .favorite {
+        /* border: 1px solid hotpink; */
+        width: auto;
+        margin: 30px 0px;
+    }
+    
+     .favorite .favoriteproduct {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+     .favorite .favoriteproduct .productfavorite {
+        /* background-color: red; */
+        height: 500px;
+        width: 200px;
+    }
+
+     .favorite .favoriteproduct .productfavorite {
+        padding: 15px 30px;
+        margin: 100px 10px;
+    }
+
+     .favorite .favoriteproduct .productfavorite .roundborderfavorite {
+        left: 50px;
+        /* background-color: red; */
+    }
+    .ourPartner{
+        margin-top: 30px;
+    }
+
+    .partnerLogo img{
+        filter: grayscale(10);
+        /* filter: brightness(-90); */
+        /* background-color: #c5c3c3; */
+        margin-top: 30px;
+        margin-right: 10px;
+        width: 50px;
+        height: auto;
+    }
+    .cardComment{
+        width: 100%;
+        overflow-x: scroll;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: flex-start;
+    }
+    .promoTitle{
+        width: 50%;
+    }
+    .promoTitle h1{
+        font-size: 20px;
+        width: 50px;
+    }
+
+    .buttonPromo{
+        width: 50%;
+    }
+    .buttonPromo Button{
+        width: 150px;
+        font-size: 12px;
+    }
+    .fsh1{
+        font-size: 25px;
+    }
+    .fsp{
+        font-size: 12px;
+    }
+}
+
+

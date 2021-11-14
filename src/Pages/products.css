@@ -1,0 +1,177 @@
+.main{
+    display: flex;
+    font-family: rubik;
+    /* width: 100%; */
+}
+.promoContent {
+    min-width: 25%;
+    font-family: rubik;
+    /* float: left; */
+}
+.content{
+    min-width: 75%;
+    /* float: right; */
+}
+.brown{
+    color: #6A4029 !important;
+}
+.bg-yellow {
+    background-color: #f5c361;
+}
+.fs12{
+    font-size: 12px;
+}
+.promotext{
+    width: 200px;
+}
+.bg-green{
+    background-color: #88B788;
+}
+.bg-yellow {
+    background-color: #f5c361;
+}
+
+.bg-brown {
+    background-color: #C59378;
+}
+.bgd-darkbrown{
+    background-color: #6A4029 !important;
+}
+
+.btnSubmitPromo{
+    width: 250px;
+}
+.asideproduct{
+    border-right: 1px solid grey;
+}
+.bdr{
+    border-right: 1px solid #CCCCCC;
+}
+.title-aside{
+    text-align: center;
+}
+.card{
+    border-radius: 15px;
+}
+
+.action{
+    border-radius: 12px;
+    padding: 12px;
+}
+.action:hover{
+    background-color: #3f2619;
+}
+.list-term{
+    color: #4F5665;
+    list-style-type: decimal;
+    padding-left: 15px;
+}
+
+
+.product{
+    margin: 30px 20px;
+    position: relative;
+    box-shadow: 1px 10px 10px #CCCCCC;
+    width: 130px;
+    height: 190px;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border: 2px solid transparent;
+}
+.product:hover{
+    transform: scale(1.1);
+    border: 2px solid #6A4029;
+}
+.product .round-border{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    overflow: hidden;
+    top: -30px;
+    left: 15px;
+    right: 15px;
+    border-radius: 100px;
+    border: 1px solid #CCCCCC;
+    
+}
+.product .round-border img{
+    object-fit: cover;
+    object-position: center;
+}
+.product h1{
+    font-family: poppinsbold;
+    padding: 12px;
+    margin-top: 65px;
+    font-size: 18px;
+    font-weight: 900;
+    height: 65px;
+}
+.product h2{
+    font-family: poppins;
+    padding: 5px;
+    color: #6A4029;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+@media screen and (max-width:576px){
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .promoContent {
+        width: auto;
+    }
+    .content{
+        width: auto;
+    }
+    .promo{
+        overflow-x: auto;
+    }
+    
+    .promo .card{
+        margin-right: 10px;
+        min-width:fit-content;
+        border-radius: 10px;
+    }
+    .promo .card img{
+        width: 50px;
+    }
+    .promotext{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 200px;
+        padding: 2px;
+    }
+    .promotext .card-text{
+        font-size: 10px;
+    }
+    .list-term{
+        font-size: 10px;
+    }
+    .aside {
+        min-width: 100%;
+    }
+    .content{
+        min-width: 100%;
+    } 
+    .bdr {
+        border-right: 1px solid transparent;
+    }
+    .title-aside{
+        text-align: start;
+        padding-left: 10px;
+    }
+    .title-aside h5{
+        font-size: 18px;
+    }
+    .navbarProducts{
+        font-size: 12px;
+    }
+
+    
+}

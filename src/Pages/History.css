@@ -1,0 +1,95 @@
+main{
+    background-image: url("https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=878&q=80");
+    background-position: center;
+    background-size: cover;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.historyTitle h1{
+    font-family: poppinsbold;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.24);
+}
+
+.historyCard{
+    border-radius: 10px;
+}
+.historyCardTitle h1{
+    font-size: 18px;
+    font-weight: bold;
+}
+.historyCardTitle p{
+    color: grey;
+    font-size: 15px;
+}
+.historyCardBody{
+    max-height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.historyCardImage{
+    width: 25%;
+    /* background-color: green; */
+}
+.imageBorder{
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 100%;
+    position: relative;
+    object-fit: cover;
+}
+.imageBorder img{
+    width: auto;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+.historyCardProduct h1{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 4px 0px;
+
+}
+.historyCardProduct h2{
+    font-size: 14px;
+    color: grey;
+    margin: 5px 0px;
+}
+.historyCardProduct p{
+    font-size: 15px;
+    margin: 0px;
+    margin-bottom: 2px;
+}
+.historyCardFooter{
+    font-family: poppins;
+}
+.historyCardFooter p{
+    color: grey;
+    padding-top: 10px;
+    font-size: 15px;
+    margin: 0px;
+}
+.historyCardFooter h1{
+    font-family: 30px;
+}
+@media screen and (max-width:576px){
+    .historyCardBody{
+        max-height: 80px;
+    }
+    .historyCard{
+        padding: 15px;
+    }
+    .imageBorder{
+        width: 50px;
+        height: 50px;
+    }
+    .historyCardTitle p{
+        font-size: 12px;
+    }
+    .historyCardProduct p{
+        font-size: 12px;
+    }
+}

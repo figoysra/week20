@@ -1,0 +1,97 @@
+main{
+    background-image: url("https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=878&q=80");
+    background-position: center;
+    background-size: cover;
+}
+.profileTitle{
+    font-size: 25px;
+    font-family: poppins;
+}
+.profilePictureCard{
+    border-radius: 10px;
+    border-bottom: 10px solid #6A4029;
+}
+.borderImage{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+}
+.borderImage img{
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+.username{
+    font-family: poppinsbold;
+    font-size: 18px;
+}
+.email{
+    font-size: 12px;
+    color: grey;
+}
+.amountofOrder{
+    font-size: 15px;
+}
+.contactCard{
+    border-radius: 10px;
+    border-bottom: 10px solid #6A4029;
+}
+.contactCardTitle{
+    font-size: 20px;
+    font-family: poppinsbold;
+    color: gray;
+}
+Label{
+    color: grey;
+    font-family: poppins;
+    font-size: 15px;
+}
+.detailCard{
+    border-radius: 10px;
+    border-bottom: 10px solid #6A4029;
+}
+.detailCardTitle{
+    font-size: 20px;
+    font-family: poppinsbold;
+    color: gray;
+}
+.saveChangeTitle{
+    font-size: 20px;
+    font-family: poppinsbold;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.24);
+}
+.saveChange Button{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: poppinsbold;
+}
+.buttonBrown{
+    background-color: #6A4029 !important;
+}
+.colorBrown{
+    color: #6A4029 !important;
+}
+.buttonYellow{
+    background-color: #ffba33 !important;
+}
+@media screen and (max-width:576px){
+    .profilePictureCard{
+        margin-top: 20px;
+    }
+    .profileTitle{
+        display: none;
+    }
+    .contactCard{
+        margin-top: 20px;
+    }
+    .saveChangeTitle{
+        display: none;
+    }
+}

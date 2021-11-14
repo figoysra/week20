@@ -1,0 +1,11 @@
+.rubik {
+    font-family: rubik;
+    font-size: 14px;
+}
+.fwbold{
+    width: 250px;
+}
+.list li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}

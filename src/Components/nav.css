@@ -1,0 +1,73 @@
+.rubik{
+    font-family: rubik;
+}
+.bg-yellow {
+    background-color: #f5c361;
+}
+.fs15{
+    font-size: 15px;
+}
+.cursor{
+    cursor: pointer;
+}
+.btn{
+    background-color: #f5c361;
+}
+
+.chat {
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.chat .notif {
+    position: absolute;
+    bottom: -2px;
+    left: 10px;
+}
+.chat .notif p{
+    height: 15px;
+    width: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-family: rubik;
+    font-weight: 600;
+    background-color: #6A4029;
+    border-radius: 30px;
+    color: white;
+}
+
+.chat img {
+    width: 22px;
+    height: 23px;
+}
+
+.image {
+    width: 23px;
+    height: 23px;
+    overflow: hidden;
+    border-radius: 100%;
+    position: relative;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.image img {
+    width: auto;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    /* height: auto; */
+}
+
+.secondMenu{
+    font-weight: 500;
+    color: black;
+}
+.secondMenu:hover{
+    color: #f5c361;
+}
