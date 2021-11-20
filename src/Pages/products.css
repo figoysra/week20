@@ -115,6 +115,30 @@
     font-weight: 300;
     font-size: 15px;
 }
+.btnPaginationClick{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 20px;
+    color: white;
+    border: none;
+    background-color: #6A4029;
+    font-weight: bold;
+    font-family: rubik  ;
+}
+.btnPagination {
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin-right: 20px;
+    font-weight: bold;
+    font-family: rubik  ;
+    background-color: white;
+}
+.btnPagination:hover{
+    border-bottom: 2px solid #6A4029;
+}
+
 
 @media screen and (max-width:576px){
     .main{
@@ -171,6 +195,9 @@
     }
     .navbarProducts{
         font-size: 12px;
+    }
+    .term{
+        display: none;
     }
 
     

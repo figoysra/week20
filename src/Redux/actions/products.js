@@ -43,7 +43,7 @@ export const SEARCH_PRODUCT = (search) =>{
     return (dispatch)=>{
         axios.get(`${API_URL}products?search=${search}`)
         .then((response)=>{
-            dispatch(allProductsFulfilled(response.data.data.data))
+            dispatch(allProductsFulfilled(response.data.data))
         })
         .catch((err)=>{
             dispatch(allProductsRejected)
@@ -55,7 +55,8 @@ export const ACTION_GET_ALL_PRODUCTS = () =>{
         dispatch(allProductsPending())
         axios.get(`${API_URL}products`)
         .then((response)=>{
-            dispatch(allProductsFulfilled(response.data.data.data));
+            console.log(response.data.data)
+            dispatch(allProductsFulfilled(response.data.data));
         })
         .catch((err)=>{
             dispatch(allProductsRejected())
@@ -92,6 +93,20 @@ export const DELETE_PRODUCT = (id, token) =>{
             reject(err)
         })
     })
+}
+
+export const HANDLEPAGINATION = (query)=>{
+    const {page} = query
+    return(dispatch)=>{
+        dispatch(allProductsPending());
+        axios.get(`${API_URL}products?page=${page}`)
+        .then((response)=>{
+            dispatch(allProductsFulfilled(response.data.data))
+        })
+        .catch((err)=>{
+            dispatch(allProductsRejected)
+        })
+    }
 }
 
 

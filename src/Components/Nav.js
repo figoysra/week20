@@ -55,94 +55,98 @@ const NavBar = ({token}) =>{
             </NavbarBrand>
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
-              <Nav
-                className="cursor fw-bold fs15 d-flex justify-content-lg-center w-75"
-                navbar
-              >
-                <NavItem>
-                  <Link className="text-decoration-none secondMenu me-3" to="/">
-                    Home
-                  </Link>
-                </NavItem>
-                <NavItem>
-                  <Link
-                    className="text-decoration-none secondMenu me-3"
-                    to="/products"
-                  >
-                    Product
-                  </Link>
-                </NavItem>
-                {user.user.admin === 0 || user.user.admin === undefined ? (
-                  <>
-                    <NavItem>
-                      <Link
-                        className="text-decoration-none secondMenu me-3"
-                        to="/yourcart"
-                      >
-                        Your Cart
-                      </Link>
-                    </NavItem>
-                    <NavItem>
-                      <Link
-                        className="text-decoration-none secondMenu me-3"
-                        to="/history"
-                      >
-                        History
-                      </Link>
-                    </NavItem>
-                  </>
-                ) : null}
-              </Nav>
-              <Nav>
-                {token === null ? (
-                  <div className="d-flex align-items-center  ">
-                    <NavItem className="me-1 fw-bold">
-                      <Link
-                        className="text-decoration-none text-dark me-3"
-                        to="/login"
-                      >
-                        Login
-                      </Link>
-                    </NavItem>
-                    <NavItem>
-                      <Link
-                        className="p-2 text-dark cursor fw-bold rounded-pill bgyellow me-3"
-                        to="/register"
-                      >
-                        SignUp
-                      </Link>
-                    </NavItem>
-                  </div>
-                ) : (
-                  <div className="d-flex align-items-center ">
-                    <form onSubmit={handleSearch}>
-                      <Input
-                        className="p-1 fs15"
-                        onChange={(e) => setSearch(e.target.value)}
-                        placeholder="Search"
-                        type="text"
-                        name=""
-                      />
-                    </form>
-                    <div className="chat">
-                      {/* {JSON.stringify(user.user.photo)} */}
-                      <div className="notif">
-                        <p>1</p>
-                      </div>
-                      <img
-                        src="https://image.flaticon.com/icons/png/512/1380/1380370.png"
-                        alt=""
-                      />
-                    </div>
-                    <div
-                      className="image"
-                      onClick={() => history.push("/profile")}
+                <Nav
+                  className="cursor fw-bold fs15 d-flex justify-content-lg-center w-75"
+                  navbar
+                >
+                  <NavItem className="navItem navUp">
+                    <Link
+                      className="text-decoration-none secondMenu me-3"
+                      to="/"
                     >
-                      <img src={`${API_URL}/${user.user.photo}`} alt="" />
+                      Home
+                    </Link>
+                  </NavItem>
+                  <NavItem className="navItem">
+                    <Link
+                      className="text-decoration-none secondMenu me-3"
+                      to="/products"
+                    >
+                      Product
+                    </Link>
+                  </NavItem>
+                  {user.user.admin === 0 || user.user.admin === undefined ? (
+                    <>
+                      <NavItem className="navItem">
+                        <Link
+                          className="text-decoration-none secondMenu me-3"
+                          to="/yourcart"
+                        >
+                          Your Cart
+                        </Link>
+                      </NavItem>
+                      <NavItem className="navItem navDown">
+                        <Link
+                          className="text-decoration-none secondMenu me-3"
+                          to="/history"
+                        >
+                          History
+                        </Link>
+                      </NavItem>
+                    </>
+                  ) : null}
+                </Nav>
+                <Nav>
+                  {token === null ? (
+                    <div className="d-flex align-items-center navButton ">
+                      <NavItem className="me-1 fw-bold">
+                        <Link
+                          className="text-decoration-none text-dark me-4"
+                          to="/login"
+                        >
+                          Login
+                        </Link>
+                      </NavItem>
+                      <NavItem>
+                        <button
+                          className="btn btnSignUp"
+                          onClick={() => history.push("/register")}
+                        >
+                          SignUp
+                        </button>
+                      </NavItem>
                     </div>
-                  </div>
-                )}
-              </Nav>
+                  ) : (
+                    <div className="d-flex align-items-center ">
+                      <form onSubmit={handleSearch}>
+                        <Input
+                          className="p-1 fs15"
+                          onChange={(e) => setSearch(e.target.value)}
+                          placeholder="Search"
+                          type="text"
+                          name=""
+                        />
+                      </form>
+                      <div className="chat">
+                        {/* {JSON.stringify(user.user.photo)} */}
+                        <div className="notif">
+                          <p>1</p>
+                        </div>
+                        <img
+                          src="https://image.flaticon.com/icons/png/512/1380/1380370.png"
+                          alt=""
+                        />
+                      </div>
+                      <div
+                        className="image"
+                        onClick={() => history.push("/profile")}
+                      >
+                        <img src={`${API_URL}/${user.user.photo}`} alt="" />
+                      </div>
+                    </div>
+                  )}
+                </Nav>
+              
             </Collapse>
           </Container>
         </Navbar>

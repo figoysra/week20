@@ -71,3 +71,77 @@
 .secondMenu:hover{
     color: #f5c361;
 }
+.btnSignUp{
+    width: 100px !important;
+    border-radius: 20px !important;
+    background-color: #f5c361 !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    color: white !important;
+}
+
+@media screen and (max-width:576px) {
+    .navMobile{
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .navUp{
+        margin-top: 10px;
+    }
+    .navItem{
+        width: 100% !important;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        /* border-bottom: 1px solid grey; */
+        text-align: center;
+    }
+    .navDown{
+        margin-bottom: 10px;
+    }
+    .navButton{
+        width: 100%;
+        margin-bottom: 10px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .infoMenu{
+        width: 100%;
+    }
+    .infoMenuDetails{
+        margin: 0px !important;
+        /* margin-top: 50px !important; */
+    }
+    .icon{
+        width: 30px !important;
+        height: 30px !important;
+    }
+    .icon svg{
+        width: 12px !important;
+        height: 12px !important;
+    }
+    .iconMobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        font-family: rubik;
+    }
+    .pIconMobile{
+        margin: 0px;
+        font-size: 12px;
+    }
+    .fsh1 {
+        /* margin-top: 20px; */
+        font-size: 25px !important;
+    }
+    .navbar-collapse{
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+    }
+}

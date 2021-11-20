@@ -2,11 +2,11 @@ import { useEffect, useState} from 'react'
 import {Link, useHistory, useLocation} from 'react-router-dom'
 import Nav from '../Components/Nav'
 import Footer from '../Components/Footer'
-import { Container, Navbar, Row, Col, Form, Label, Input, Button, Modal, ModalHeader, ModalBody } from 'reactstrap'
+import { Container, Row, Col, Form, Label, Input, Button, Modal, ModalHeader, ModalBody } from 'reactstrap'
 import { useSelector, useDispatch } from "react-redux";
 import { ACTION_GET_ALL_CATEGORY } from '../Redux/actions/category'
 import { USER_DATA } from '../Redux/actions/users'
-import { ACTION_GET_ALL_PRODUCTS, INSERT_PRODUCTS, SEARCH_PRODUCT } from "../Redux/actions/products";
+import { ACTION_GET_ALL_PRODUCTS, HANDLEPAGINATION, INSERT_PRODUCTS, SEARCH_PRODUCT } from "../Redux/actions/products";
 import { API_URL } from '../Utils/constants'
 import CurrencyFormat from "react-currency-format";
 import './products.css'
@@ -99,6 +99,19 @@ const Products = () =>{
     // eslint-disable-next-line react-hooks/exhaustive-deps
     },[resultSearch])
     
+
+    const dataPagination = {
+        page : query.get("page"),
+    }
+    const movePage = (page) => {
+      // e.preventDefault()
+        history.push(`/products?page=${page}`);
+    };
+    useEffect(()=>{
+        dispatch(HANDLEPAGINATION(dataPagination));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[query.get("page"), query.get("limit")])
+    
     const handleSubmit = (e) => {
         e.preventDefault()
         // console.log(inputProducts)
@@ -126,7 +139,7 @@ const Products = () =>{
             alert('Insert Products Failed')
         })
     }
-    console.log(user.user)
+    console.log(user)
 
     return(
         <div>
@@ -164,7 +177,7 @@ const Products = () =>{
                         <Link to='#' className="btn bgd-darkbrown text-white btnSubmitPromo  fs12 fw-bolder action">Apply Button</Link>
                     </div>
 
-                    <div className="ms-lg-5 mt-lg-5 mt-3 ms-2">  
+                    <div className="ms-lg-5 mt-lg-5 mt-3 ms-2 term">  
                         <p className="m-0 ms-1">Term and Condition</p>
                         <ul className="fs12 list-term">
                             <li>You can only apply 1 coupon per day</li>
@@ -175,32 +188,13 @@ const Products = () =>{
                     </div>
                 </div>
                 <div className='content'>
-                    <Navbar className=" fontFamily navbar navbar-expand navbar-light d-flex navbar-products">
-                        <ul className="navbar-nav navbarProducts w-100 justify-content-center">
-                            <li className="nav-item me-lg-4 nav-product fw-bolder">
-                            <Link to='#' className="nav-link">Favorite & Promo</Link>
-                            </li>
-                            <li className="nav-item me-lg-4 nav-product fw-bolder">
-                            <Link to='#'  className="nav-link">Coffee</Link>
-                            </li>
-                            <li className="nav-item me-lg-4 nav-product fw-bolder">
-                            <Link to='#'  className="nav-link">Non Coffee</Link>
-                            </li>
-                            <li className="nav-item  me-lg-4 nav-product fw-bolder">
-                            <Link to='#'  className="nav-link">Foods</Link>
-                            </li>
-                            <li className="nav-item me-lg-4 nav-product fw-bolder">
-                            <Link to='#'  className="nav-link">Add-on</Link>
-                            </li>
-                        </ul>
-                    </Navbar>
                     <Container>
-                        <Row className='ps-lg-5 pe-lg-5'>
+                        <Row className='ps-lg-5 pe-lg-5 mt-4'>
                             {/* {JSON.stringify(users)} */}
                             {
                                 dataProducts.all.map((e)=>(
                                     <Col key={e.id} xs="6" md='4' lg='3' className='d-flex justify-content-center p-2'>
-                                        <div className="product" onClick={()=>{history.push('/detail/'+ e.id)}}>
+                                            <div className="product" onClick={()=>{history.push('/detail/'+ e.id)}}>
                                             <div className="round-border shadow">
                                                 <img src={`${API_URL}/${e.photo}`} alt="" width='100%' height='100%' />
                                             </div>
@@ -210,7 +204,21 @@ const Products = () =>{
                                     </Col>
                                 ))
                             }
+                            
                         </Row>  
+                    </Container>
+                    <Container className='ps-lg-5 pe-lg-5 mt-lg-5'>
+                        <p>Go to Page ...</p>
+                        {[...Array(dataProducts.paginationTags.totalPage)].map((e,i)=>
+                            dataProducts.paginationTags.page === i + 1 ? (
+                                <button type="" key={i} className="btnPaginationClick" onClick={()=> movePage(i+1)}>{i + 1}</button>
+                            ):(
+                                <button type="" key={i} className="btnPagination" onClick={()=> movePage(i+1)}>{i + 1}</button>
+                            )
+                            //  <>
+                            //         <button type="" key={i} onClick={()=> movePage(i+1)}>{i + 1}</button>
+                            //     </>
+                        )}
                     </Container>
                     
                     {/* {JSON.stringify(user.user.admin)} */}

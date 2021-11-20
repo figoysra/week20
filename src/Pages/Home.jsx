@@ -40,37 +40,37 @@ const Home = () =>{
             <div>
                 <Container>
                     <Row className='infoMenu bg-white'>
-                        <Col lg="4" className='infoMenuDetails d-flex justify-content-center mt-3 mb-3'>
+                        <Col lg="4" xs="4" className='infoMenuDetails d-flex justify-content-center mt-3 mb-3'>
                             <div className='icon rounded-circle d-flex align-items-center justify-content-center'>
                                 <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fillRule="evenodd" clipRule="evenodd" d="M8.0001 7.8001C8.95488 7.8001 9.87055 7.42081 10.5457 6.74568C11.2208 6.07055 11.6001 5.15488 11.6001 4.2001C11.6001 3.24532 11.2208 2.32964 10.5457 1.65451C9.87055 0.979382 8.95488 0.600098 8.0001 0.600098C7.04532 0.600098 6.12964 0.979382 5.45451 1.65451C4.77938 2.32964 4.4001 3.24532 4.4001 4.2001C4.4001 5.15488 4.77938 6.07055 5.45451 6.74568C6.12964 7.42081 7.04532 7.8001 8.0001 7.8001ZM2.89875 18.6001C1.07696 18.6001 -0.457661 17.0687 0.23951 15.3856C0.661649 14.3664 1.28039 13.4404 2.0604 12.6604C2.84041 11.8804 3.76642 11.2616 4.78556 10.8395C5.80469 10.4174 6.89699 10.2001 8.0001 10.2001C9.1032 10.2001 10.1955 10.4174 11.2146 10.8395C12.2338 11.2616 13.1598 11.8804 13.9398 12.6604C14.7198 13.4404 15.3385 14.3664 15.7607 15.3856C16.4579 17.0687 14.9232 18.6001 13.1014 18.6001H2.89875Z" fill="#6A4029"/>
                                 </svg>
                             </div>
-                            <div>
+                            <div className="iconMobile">
                                 <strong>90+</strong>
-                                <p>Staff</p>
+                                <p className="pIconMobile">Staff</p>
                             </div>
                         </Col>
-                        <Col lg="4" className='infoMenuDetails d-flex justify-content-center mt-3 mb-3'>
+                        <Col lg="4" xs="4" className='infoMenuDetails d-flex justify-content-center mt-3 mb-3'>
                             <div className='icon rounded-circle d-flex align-items-center justify-content-center'>
                                 <svg width="14" height="21" viewBox="0 0 14 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M14 7.54932C14 6.63006 13.8189 5.71981 13.4672 4.87053C13.1154 4.02125 12.5998 3.24958 11.9497 2.59957C11.2997 1.94956 10.5281 1.43394 9.67878 1.08216C8.8295 0.730377 7.91925 0.549316 7 0.549316C6.08075 0.549316 5.17049 0.730377 4.32122 1.08216C3.47194 1.43394 2.70026 1.94956 2.05025 2.59957C1.40024 3.24958 0.884626 4.02125 0.532843 4.87053C0.18106 5.71981 -1.36979e-08 6.63006 0 7.54932C0 8.93632 0.41 10.2263 1.105 11.3143H1.097C3.457 15.0093 7 20.5493 7 20.5493L12.903 11.3143H12.896C13.6164 10.1907 13.9995 8.88406 14 7.54932ZM7 10.5493C6.20435 10.5493 5.44129 10.2332 4.87868 9.67064C4.31607 9.10803 4 8.34497 4 7.54932C4 6.75367 4.31607 5.99061 4.87868 5.428C5.44129 4.86539 6.20435 4.54932 7 4.54932C7.79565 4.54932 8.55871 4.86539 9.12132 5.428C9.68393 5.99061 10 6.75367 10 7.54932C10 8.34497 9.68393 9.10803 9.12132 9.67064C8.55871 10.2332 7.79565 10.5493 7 10.5493Z" fill="#6A4029"/>
                                 </svg> 
                             </div>
-                            <div>
+                            <div className="iconMobile">
                                 <strong>30+</strong>
-                                <p>stores</p>
+                                <p className="pIconMobile">stores</p>
                             </div>
                         </Col>
-                        <Col lg="4" className='infoMenuDetails d-flex justify-content-center mt-3 mb-3'>
+                        <Col lg="4" xs="4" className='infoMenuDetails d-flex justify-content-center mt-3 mb-3'>
                             <div className='icon rounded-circle d-flex align-items-center justify-content-center'>
                                 <svg width="31" height="27" viewBox="0 0 31 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M26.918 4.03337C26.2583 3.38873 25.475 2.87736 24.6129 2.52847C23.7507 2.17958 22.8267 2 21.8934 2C20.9602 2 20.0361 2.17958 19.174 2.52847C18.3119 2.87736 17.5286 3.38873 16.8688 4.03337L15.4997 5.37059L14.1305 4.03337C12.7979 2.73186 10.9905 2.00067 9.10587 2.00067C7.22128 2.00067 5.41387 2.73186 4.08126 4.03337C2.74865 5.33488 2 7.1001 2 8.94072C2 10.7813 2.74865 12.5466 4.08126 13.8481L5.45043 15.1853L15.4997 25L25.5489 15.1853L26.918 13.8481C27.5781 13.2037 28.1017 12.4387 28.4589 11.5967C28.8161 10.7547 29 9.85216 29 8.94072C29 8.02928 28.8161 7.12677 28.4589 6.28475C28.1017 5.44273 27.5781 4.6777 26.918 4.03337V4.03337Z" stroke="#6A4029" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
                                 </svg>
                             </div>
-                            <div>
+                            <div className="iconMobile">
                                 <strong>800+</strong>
-                                <p>Customers</p>
+                                <p className="pIconMobile">Customers</p>
                             </div>
                         </Col>
                     </Row>

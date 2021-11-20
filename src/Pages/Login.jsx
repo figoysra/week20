@@ -26,7 +26,7 @@ const Login = () =>{
             .then((response)=>{
                 history.push("/")
             }).catch((err)=>{
-                // console.log()
+                console.log(err)
                 alert("Email / Password salah");
                 history.push('/login')
             })
