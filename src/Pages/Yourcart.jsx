@@ -287,7 +287,7 @@ const Yourcart = () =>{
                                                 </FormGroup>
                                             </div>
                                         </div>
-                                        <Button type='submit' onClick={handleSubmit} className='applyButton fw-bold p-2 mt-3 btn brown text-light w-75'>
+                                        <Button type='submit' onClick={handleSubmit} className='applyButton fw-bold p-2 mt-3 btn brown textWhiteCart w-75'>
                                             Apply Button
                                         </Button>
                                     </div>

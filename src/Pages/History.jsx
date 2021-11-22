@@ -56,7 +56,7 @@ const History = () =>{
                                         <CurrencyFormat value={e.tax} displayType={'text'} thousandSeparator={true} prefix={'Tax : Rp. '} />
                                     </p>
                                 
-                                    <button type="" className="btn btn-success" onClick={() => getProduct(e.id)}>Let See What have You Bought</button>
+                                    <button type="" className="btn btnUpdateCart " onClick={() => getProduct(e.id)}>Let See What have You Bought</button>
                                     <Modal isOpen={modal} toggle={toggle} >
                                         <ModalHeader toggle={toggle}>What have You Bought</ModalHeader>
                                         <ModalBody>

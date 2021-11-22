@@ -141,6 +141,9 @@
     font-size: 18px;
     cursor: pointer;
 }
+.textWhiteCart{
+    color: white !important;
+}
 .poppinsbold{
     font-family: poppinsbold;
 }

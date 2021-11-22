@@ -197,8 +197,8 @@ const Details = () =>{
                                                         })
                                                     }
                                             </select><br />
-                                            <Button type='submit' className='w-100 m-2 btn btn-success' onClick={toggle}>Update Data</Button><br />
-                                            <Button className='w-100 m-2 btn btn-danger' onClick={toggle}>Cancel</Button>
+                                            <Button type='submit' className='w-100 m-2 btn btnUpdateCart' onClick={toggle}>Update Data</Button><br />
+                                            <Button className='w-100 m-2 btn btnCancelUpdate' onClick={toggle}>Cancel</Button>
                                         </Form>
                                     </ModalBody>
                                 </Modal>

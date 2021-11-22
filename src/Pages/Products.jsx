@@ -247,14 +247,19 @@ const Products = () =>{
                                 onChange={changeInputText}>
                                     {
                                         category.all.map((e, i)=>{
-                                            return(
-                                                <option key={i} value={e.id}>{e.category}</option>
-                                            )
+                                            return (
+                                                <>
+                                                    <option value="" selected disabled hidden>Choose here</option>
+                                                    <option key={i} value={e.id}>
+                                                    {e.category}
+                                                    </option>
+                                                </>
+                                            );
                                         })
                                     }
                                 </select><br />
-                                <Button type='submit' className='w-100 m-2 btn btn-success'  onClick={toggle}>Add Data</Button><br />
-                                <Button className='w-100 m-2 btn btn-danger' onClick={toggle}>Cancel</Button>
+                                <Button type='submit' className='w-100 m-2 btn btnAddData'  onClick={toggle}>Add Data</Button><br />
+                                <Button className='w-100 m-2 btn btnCancelData' onClick={toggle}>Cancel</Button>
                             </Form>
                         </ModalBody>
                     </Modal>

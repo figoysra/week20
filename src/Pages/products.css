@@ -139,6 +139,16 @@
     border-bottom: 2px solid #6A4029;
 }
 
+.btnAddData{
+    background-color: #88B788 !important;
+    color: #6A4029 !important;
+}
+
+.btnCancelData{
+    background-color: #C59378 !important;
+    color: #6A4029 !important;
+}
+
 
 @media screen and (max-width:576px){
     .main{
