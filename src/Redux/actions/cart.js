@@ -46,3 +46,10 @@ export const REMOVE_QTY = (data) =>{
         })
     }
 }
+export const RESET_CART_TRANSACTION = () =>{
+    return (dispatch) =>{
+        dispatch({
+            type : "RESET_CART"
+        })
+    }
+}

@@ -14,7 +14,7 @@ import { useHistory } from 'react-router-dom';
 import { useState } from 'react';
 import { TextField } from '@material-ui/core';
 import { INSERT_TRANSACTION } from '../Redux/actions/transaction.js';
-import {DELETE_CART} from '../Redux/actions/cart'
+import {DELETE_CART, RESET_CART_TRANSACTION} from '../Redux/actions/cart'
 
 
 const Yourcart = () =>{
@@ -89,6 +89,7 @@ const Yourcart = () =>{
             .then((res)=>{
                 // console.log(res)
                 alert('Transaction Success')
+                dispatch(RESET_CART_TRANSACTION())
                 history.push('/history')
             }).catch((err)=>{
                 // console.log(err)

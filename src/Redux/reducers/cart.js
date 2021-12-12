@@ -11,6 +11,8 @@ const cartReducer = (state = initialState, action) =>{
             return  {cart : action.payload}
         case "REMOVE_QTY":
             return  {cart : action.payload}
+        case 'RESET_CART' : 
+            return {...state, cart : []}
         default:
             return state 
         }

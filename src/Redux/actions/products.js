@@ -73,7 +73,8 @@ export const DETAIL_PRODUCT = (id) =>{
             dispatch(detailFulfilled(response.data.data));
         })
         .catch((err)=>{
-            dispatch(detailRejected())
+            dispatch(detailRejected(err.response))
+            // console.log(err)
         })
     }
 }
@@ -144,8 +145,9 @@ const detailFulfilled = (payload) =>{
     }
 }
 
-const detailRejected = () =>{
+const detailRejected = (payload) =>{
     return{
-        type: 'GET_DETAIL_PRODUCT_REJECTED'
+        type: 'GET_DETAIL_PRODUCT_REJECTED',
+        payload
     }
 }

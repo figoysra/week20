@@ -140,12 +140,74 @@
 }
 
 .btnAddData{
-    background-color: #88B788 !important;
+    background-color: #f5c361 !important;
     color: #6A4029 !important;
+    font-weight: bold !important;
+    font-family: rubik !important;
+    border: none !important;
+    border-radius: 20px !important;
 }
 
 .btnCancelData{
-    background-color: #C59378 !important;
+    background-color: red !important;
+    color: white !important;
+    font-weight: bold !important;
+    font-family: rubik !important;
+    border: none !important;
+    border-radius: 20px !important;
+}
+.containerImage{
+    position: relative;
+}
+.productImage{
+    width: 100px !important;
+    height: 100px !important;
+    overflow: hidden;
+    /* background-color: green; */
+    border-radius: 100%;
+    object-fit: cover;
+    position: relative;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.productImage img{
+    width: auto !important;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.containerImage:hover .productImage {
+    opacity: 0.3;
+}
+
+.containerImage:hover .middle {
+    opacity: 1;
+}
+
+.uploadImage{
+    display: none !important;
+}
+.text{
+    /* background-color: #6A4029 !important; */
+    /* border-radius: 2px !important; */
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 12px !important;
+    font-weight: 800 !important;
+    cursor: pointer;
     color: #6A4029 !important;
 }
 

@@ -118,9 +118,9 @@ const NavBar = ({token}) =>{
                     </div>
                   ) : (
                     <div className="d-flex align-items-center ">
-                      <form onSubmit={handleSearch}>
+                      <form onSubmit={handleSearch} className='searchBox'>
                         <Input
-                          className="p-1 fs15"
+                          className="p-1 fs15 searchInput"
                           onChange={(e) => setSearch(e.target.value)}
                           placeholder="Search"
                           type="text"

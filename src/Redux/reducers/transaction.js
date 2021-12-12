@@ -12,7 +12,6 @@ const transactionReducer = (state= initialState, action) =>{
             return {...state, loadAll : false, transaction : action.payload}
         case 'GET_ALL_TRANSACTION_REJECTED' :
             return {...state,loadAll : false, errorAll: true, errorAllMessage: action.payload}
-    
         default:
             return state;
     }

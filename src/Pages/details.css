@@ -167,6 +167,8 @@
 .btnUpdateCart{
     background-color: #FFBA33 !important;
     color: #6A4029 !important;
+    font-weight: 700 !important;
+    font-family: rubik;
 }
 .btnCancelUpdate{
     background-color: rgb(235, 52, 52) !important;

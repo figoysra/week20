@@ -79,6 +79,19 @@
     font-weight: bold !important;
     color: white !important;
 }
+.searchBox{
+    background-color: white !important;
+    border: 1px solid grey;
+    padding: 2px 10px;
+    border-radius: 20px;
+}
+.searchInput{
+    border: none !important;
+}
+.searchInput:focus {
+    border-color: none !important;
+    box-shadow: none !important;
+}
 
 @media screen and (max-width:576px) {
     .navMobile{

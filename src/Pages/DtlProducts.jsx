@@ -70,6 +70,7 @@ const Details = () =>{
             alert(response.message)
             history.push("/products");
         }).catch((error)=>{
+            console.log(error)
             alert(`${error.message} Cannot Delete Data
             Please Call Admin in 021-082`);
         })

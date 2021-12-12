@@ -35,7 +35,6 @@ export const GET_TRANSACTION = () =>{
         })
     }
 }
-
 const allTransactionPending= () =>{
     return{
         type : 'GET_ALL_TRANSACTION_PENDING'
